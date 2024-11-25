@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAVE - Marketing y Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="#inicio" class="active">MAVE</a>
+            <div id="myLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-nosotros">Sobre nosotros</a>
+                <a href="#nuestros-servicios">Nuestros servicios</a>
+                <a href="#marcas-que-confiaron">Marcas que confiaron</a>
+                <a href="#contactanos">Contáctanos</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="background-image">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>¡Bienvenido a MAVE!</h1>
+                    <p>Tu agencia de marketing y desarrollo web.</p>
+                    <a href="#sobre-nosotros" class="cta-button">Descubre más</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+            <div class="carousel-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="imagenes/ceo.jpg" alt="Braiam Alexis Herrera">
+                        <p>
+                            <strong>Braiam Alexis Herrera: CEO de MAVE (Programador y desarrollador web)</strong>
+                            <ol>
+                                <li>Programador y desarrollador web con más de 10 años de experiencia en la creación de soluciones digitales innovadoras.</li>
+                                <li>Ha liderado numerosos proyectos de desarrollo web, aplicando las últimas tecnologías para mejorar la experiencia del usuario y la eficiencia operativa.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="imagenes/ceo mujer.jpg" alt="Johana Belen Romero">
+                        <p>
+                            <strong>Johana Belen Romero: CEO de MAVE.</strong>
+                            <ol>
+                                <li>Licenciada en Marketing digital y Diseño y comunicación.</li>
+                                <li>Experta en estrategias de marketing digital.</li>
+                                <li>Ha ayudado a muchas empresas a crecer mediante el diseño y ejecución de campañas creativas y efectivas.</li>
+                                <li>Fusiona el arte del diseño con la ciencia del marketing para obtener resultados sobresalientes.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+        
+        <section id="nuestros-servicios">
+            <h2>Nuestros servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-item">
+                    <img src="imagenes/paginas webs.jpg" alt="Servicio 1">
+                    <p>Creación de páginas web</p>
+                </div>
+                <div class="servicio-item">
+                    <img src="imagenes/tienda online.png" alt="Servicio 2">
+                    <p>Tiendas online</p>
+                </div>
+                <div class="servicio-item">
+                    <img src="imagenes/redes sociales.png" alt="Servicio 3">
+                    <p>Marketing en redes sociales</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="marcas-que-confiaron">
+            <h2>Marcas que confiaron en nosotros</h2>
+            <div class="carousel-marcas">
+                <div class="carousel-track">
+                    <!-- Imágenes del carrusel -->
+                    <img src="imagenes/logos/1.png" alt="Universal Studios">
+                    <img src="imagenes/logos/2.png" alt="Hard Rock">
+                    <img src="imagenes/logos/3.png" alt="Tinder">
+                    <img src="imagenes/logos/4.png" alt="Oreo">
+                    <img src="imagenes/logos/5.png" alt="UEFA">
+                    <img src="imagenes/logos/6.png" alt="Stanford University">
+                    <img src="imagenes/logos/7.png" alt="Colgate">
+                    <img src="imagenes/logos/8.png" alt="Jurassic World">
+                    <img src="imagenes/logos/9.png" alt="Colgate">
+                    <img src="imagenes/logos/10.png" alt="Jurassic World">
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contactanos">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                <!-- Campos de texto -->
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                
+                <!-- Campos de fecha -->
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" required>
+                
+                <label for="fecha-evento">Fecha del Evento:</label>
+                <input type="date" id="fecha-evento" required>
+                
+                <!-- Campos de número -->
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" placeholder="Celular" required>
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" placeholder="Edad" required>
+                
+                <label for="codigo-postal">Código Postal:</label>
+                <input type="number" id="codigo-postal" placeholder="Código Postal" required>
+                
+                <!-- Botón para calcular -->
+                <button type="button" id="calcular">Calcular</button>
+                
+                <!-- Recuadro para mostrar el resultado -->
+                <div id="resultado-suma" style="margin-top: 20px; font-weight: bold;"></div>
+                
+                <!-- Grupo de checkboxes -->
+                <fieldset>
+                    <legend>Intereses:</legend>
+                    <label><input type="checkbox" name="intereses" value="marketing"> Marketing</label>
+                    <label><input type="checkbox" name="intereses" value="desarrollo-web"> Desarrollo Web</label>
+                    <label><input type="checkbox" name="intereses" value="diseño-grafico"> Diseño Gráfico</label>
+                    <label><input type="checkbox" name="intereses" value="seo"> SEO</label>
+                </fieldset>
+                
+                <!-- Botón para marcar todos los intereses -->
+                <button type="button" id="marcar-todos">Marcar todos los intereses</button>
+                
+                <!-- Lista desplegable -->
+                <label for="suscripcion">Tipo de Suscripción:</label>
+                <select id="suscripcion" name="suscripcion" required>
+                    <option value="basica">Básica</option>
+                    <option value="estandar">Estándar</option>
+                    <option value="premium">Premium</option>
+                    <option value="vip">VIP</option>
+                </select>
+                
+                <!-- Botones para cambiar a mayúsculas y minúsculas -->
+                <button type="button" id="mayusculas">Mayúsculas</button>
+                <button type="button" id="minusculas">Minúsculas</button>
+                
+                <!-- Botones -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Reiniciar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado por MAVE, todos los derechos reservados</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/tu_perfil" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/tu_perfil" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://wa.me/tu_numero" target="_blank"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
